@@ -14,6 +14,8 @@
 		112E9C541E4A1BC000F075DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112E9C521E4A1BC000F075DE /* LaunchScreen.storyboard */; };
 		112E9C5C1E4A37A300F075DE /* CalcularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E9C5B1E4A37A300F075DE /* CalcularViewController.swift */; };
 		112E9C5E1E4A37ED00F075DE /* AvanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E9C5D1E4A37ED00F075DE /* AvanceViewController.swift */; };
+		112E9C601E4A7AEB00F075DE /* ListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E9C5F1E4A7AEB00F075DE /* ListaTableViewController.swift */; };
+		112E9C621E4A7B9D00F075DE /* SeleccionadosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112E9C611E4A7B9D00F075DE /* SeleccionadosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		112E9C551E4A1BC000F075DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112E9C5B1E4A37A300F075DE /* CalcularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcularViewController.swift; sourceTree = "<group>"; };
 		112E9C5D1E4A37ED00F075DE /* AvanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvanceViewController.swift; sourceTree = "<group>"; };
+		112E9C5F1E4A7AEB00F075DE /* ListaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListaTableViewController.swift; sourceTree = "<group>"; };
+		112E9C611E4A7B9D00F075DE /* SeleccionadosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeleccionadosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				112E9C551E4A1BC000F075DE /* Info.plist */,
 				112E9C5B1E4A37A300F075DE /* CalcularViewController.swift */,
 				112E9C5D1E4A37ED00F075DE /* AvanceViewController.swift */,
+				112E9C5F1E4A7AEB00F075DE /* ListaTableViewController.swift */,
+				112E9C611E4A7B9D00F075DE /* SeleccionadosViewController.swift */,
 			);
 			path = Tarea02;
 			sourceTree = "<group>";
@@ -146,6 +152,8 @@
 				112E9C4C1E4A1BBF00F075DE /* ViewController.swift in Sources */,
 				112E9C5E1E4A37ED00F075DE /* AvanceViewController.swift in Sources */,
 				112E9C4A1E4A1BBF00F075DE /* AppDelegate.swift in Sources */,
+				112E9C601E4A7AEB00F075DE /* ListaTableViewController.swift in Sources */,
+				112E9C621E4A7B9D00F075DE /* SeleccionadosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
