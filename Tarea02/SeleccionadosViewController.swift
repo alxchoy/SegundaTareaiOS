@@ -9,11 +9,17 @@
 import UIKit
 
 class SeleccionadosViewController: UIViewController {
+    
+    var parametro: Array<String> = []
 
+    @IBOutlet weak var lblResultado: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        lblResultado.text = String(describing: parametro)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +27,10 @@ class SeleccionadosViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnRegresarTouch(_ sender: UIButton) {
+        // volver una pantalla anterior
+        self.dismiss(animated: true)
+    }
 
     /*
     // MARK: - Navigation

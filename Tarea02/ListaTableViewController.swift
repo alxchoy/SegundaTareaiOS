@@ -24,7 +24,31 @@ class ListaTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    // Este método se ejecuta cada vez que se selecciona un row de la table view
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // si se selecciona la fila del botoón siguiente, enviamos a otra pantalla
+        if indexPath.section == 2 && indexPath.row == 3 {
+            self.performSegue(withIdentifier: "mostrarDatos", sender: self)
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "mostrarDatos" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! SeleccionadosViewController
+                let cell = self.tableView.cellForRow(at: indexPath)
+                
+            }
+        }
+        
+        //let selViewController: SeleccionadosViewController = segue.destination as! SeleccionadosViewController
+        
+        //selViewController.parametro = parametro
+    }
     // MARK: - Table view data source
     
     /*
