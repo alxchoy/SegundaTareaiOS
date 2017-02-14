@@ -10,16 +10,21 @@ import UIKit
 
 class SeleccionadosViewController: UIViewController {
     
-    var parametro: Array<String> = []
+    var lista: Array<String> = []
 
     @IBOutlet weak var lblResultado: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var texto: String = ""
 
         // Do any additional setup after loading the view.
+        for item in lista {
+            texto += "\(item), "
+        }
+        lblResultado.text = texto
         
-        lblResultado.text = String(describing: parametro)
     }
 
     override func didReceiveMemoryWarning() {

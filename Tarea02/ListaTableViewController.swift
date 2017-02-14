@@ -9,6 +9,9 @@
 import UIKit
 
 class ListaTableViewController: UITableViewController {
+    
+    var parametro: Array<String> = []
+    var b: Array<String> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,21 +36,20 @@ class ListaTableViewController: UITableViewController {
             self.performSegue(withIdentifier: "mostrarDatos", sender: self)
             tableView.deselectRow(at: indexPath, animated: true)
         }
+        
+        let cell = tableView.cellForRow(at: indexPath)
+        
+        // nos aseguramos de que la variable texto contenga un valor para luego agregarlo al array
+        if let texto = cell?.textLabel?.text {
+            parametro.append(texto)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "mostrarDatos" {
-            if let indexPath = self.tableView.indexPathForSelectedRow {
-                let controller = segue.destination as! SeleccionadosViewController
-                let cell = self.tableView.cellForRow(at: indexPath)
-                
-            }
-        }
+        let selViewController: SeleccionadosViewController = segue.destination as! SeleccionadosViewController
         
-        //let selViewController: SeleccionadosViewController = segue.destination as! SeleccionadosViewController
-        
-        //selViewController.parametro = parametro
+        selViewController.lista = parametro
     }
     // MARK: - Table view data source
     
